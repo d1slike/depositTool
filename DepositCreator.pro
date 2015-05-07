@@ -19,12 +19,9 @@ SOURCES += main.cpp \
     model/ratesmatrix.cpp
 
 HEADERS += \
-    model/date.h \
-    model/deposit.h \
     model/money.h \
     model/ratesmatrix.h \
     model/valute.h \
-    templates/depositholder.h \
     templates/deposittemplate.h \
     utils/array.h \
     utils/section.h

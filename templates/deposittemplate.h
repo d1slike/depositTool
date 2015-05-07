@@ -1,5 +1,5 @@
 #include <QString>
-#include "ratesmatrix.h"
+#include "../model/ratesmatrix.h"
 
 
 //Шаблон для для депозита
