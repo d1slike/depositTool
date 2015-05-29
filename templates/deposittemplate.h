@@ -11,6 +11,8 @@ class DepositTemplate{
     bool can_capitalize; //капитализация процентов
     bool can_add; //можно добавлять
     bool can_remove; //можно досрочно снимать
+    bool dynam_rates;//градация по ставкам
+
 
 public:
     void setCanCapitalize(bool can)
@@ -43,6 +45,11 @@ public:
         this->info = info;
     }
 
+    void setDynamRates(bool dynam_rates)
+    {
+        this->dynam_rates = dynam_rates;
+    }
+
     bool isCanCapitalize()
     {
         return can_capitalize;
@@ -58,17 +65,22 @@ public:
         return can_remove;
     }
 
-    const QString& getName()
+    bool isDynamRates()
+    {
+        return dynam_rates;
+    }
+
+    QString& getName()
     {
         return name;
     }
 
-    const RatesMatrix& getRates()
+    RatesMatrix& getRates()
     {
         return rates;
     }
 
-    const QString& getInfo()
+    QString& getInfo()
     {
         return info;
     }
